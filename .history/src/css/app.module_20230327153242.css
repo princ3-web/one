@@ -83,7 +83,6 @@ body {
   width: 2000%;
   height: 400px;
   background-repeat: repeat-x;
-  transition: 2s;
 }
 
 .cloudy{
@@ -213,6 +212,7 @@ body {
 
 .skyButton:active{
   filter:drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+
 }
 
 
