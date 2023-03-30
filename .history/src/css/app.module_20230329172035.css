@@ -1,0 +1,229 @@
+:root {
+  --main-color: rgb(255, 255, 255);
+  --secondary-color: rgb(15, 208, 112);
+  --main-bg-color: rgb(255, 255, 255);
+  --secondary-bg-color: rgb(15, 208, 112);
+  --tertiary-bg-color: rgb(0, 0, 0);
+}
+
+html > div {
+  display: none;
+}
+
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--tertiary-bg-color);
+  user-select: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cursor{
+  position: absolute;
+  margin-top: 70px;
+  z-index: 2;
+}
+
+.logo{
+  z-index: 2;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: white;
+}
+
+.background {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: brightness(1) saturate(0);
+  
+}
+
+.lightingCloudy{
+  animation: 10s lightingCloudy infinite alternate-reverse;
+}
+
+.lightingClear{
+  animation: 10s lightingClear infinite alternate-reverse;
+}
+
+@keyframes lightingCloudy {
+  0% {filter: brightness(0.5) saturate(0)}
+  33% {filter: brightness(0.4) saturate(0)}
+  66% {filter: brightness(0.6) saturate(0)}
+}
+
+@keyframes lightingClear {
+  0% {filter: brightness(1.4) saturate(0)}
+  33% {filter: brightness(1.1) saturate(0)}
+  66% {filter: brightness(1.2) saturate(0)}
+}
+
+.backgroundClouds {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  object-fit: scale-down;
+  filter: brightness(0.9) opacity(1) saturate(0);
+  animation: 300s clouds infinite linear;
+  width: 2000%;
+  height: 300px;
+  background-repeat: repeat-x;
+  transition: 2s;
+}
+
+.cloudy{
+  background: url("../assets/images/clouds.png");
+}
+
+.clear{
+  background: url("../assets/images/clouds0.png");
+}
+
+@keyframes clouds {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-10%);}
+}
+
+
+.container {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 60%;
+  height: 60%;
+  border: 0px solid gray;
+  transition: .5s;
+}
+
+.textContainer {
+}
+
+.text {
+  color: var(--main-color);
+  width: fit-content;
+  transition: 0s;
+}
+
+.text1 {
+  font-size: 1rem;
+}
+.text15 {
+  font-size: 1.5rem;
+}
+.text2 {
+  font-size: 2rem;
+}
+.text3 {
+  font-size: 3rem;
+}
+.text4 {
+  font-size: 4rem;
+}
+
+.selected {
+  color: var(--main-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.shifted0 {
+  transform: translateY(0%) scale(1) perspective(5000px) rotateX(90deg);
+  transform-origin: 0% -20%;
+}
+.shifted1 {
+  transform: translateY(0%) perspective(2000px) rotateX(0deg);
+  transform-origin: 0% 0%;
+}
+.shifted2 {
+  transform: translateY(0%) scale(1) perspective(5000px) rotateX(-90deg);
+  transform-origin: 0% 120%;
+}
+
+.dotBar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 50px;
+  right: 10%;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dotLine{
+  position: absolute;
+  height: 200px;
+  width: 1px;
+  background-color: var(--main-bg-color);
+  filter: opacity(0);
+}
+
+.dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: var(--main-bg-color);
+  filter: opacity(0.25);
+  transform: scale(0.5);
+  z-index: 2;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.dotSelected{
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: var(--main-bg-color);
+  filter: opacity(1);
+  transform: scale(1);
+  z-index: 2;
+}
+
+.skyButton{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: red;
+  z-index: 2;
+  transition: 0.5s;
+  transform: scale(1);
+  filter:drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3)) saturate(0);
+
+}
+
+.skyButton:active{
+  filter:drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3)) saturate(0);
+}
+
+
+.cloudyIcon{
+  background: url("../assets/images/cloudyIcon.png");
+  background-size: cover;
+}
+
+.clearIcon{
+  background: url("../assets/images/clearIcon.png");
+  background-size: cover;
+}
