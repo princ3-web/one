@@ -1,68 +1,16 @@
 import React, { useEffect, useState } from "react";
 import app from "./css/app.module.css";
-import cursor from "./css/cursor.module.css";
-import text from "./css/text.module.css";
-import logo from "./css/logo.module.css";
-import background from "./css/background.module.css";
-import skyButton from "./css/skyButton.module.css";
-import dotBar from "./css/dotBar.module.css";
-import mountainBackground from "./assets/images/mountainbackground.webp";
-import arrow from "./assets/images/arrow.png";
+import TextContainer from "./components/TextContainer";
+import texts from "./components/TextContent.jsx";
+import CursorComponent from "./components/Cursor.jsx";
+import Logo from "./components/Logo.jsx";
+import DotBar from "./components/DotBar.jsx";
+import Video from "./components/Video.jsx";
 
 function App() {
   const [shift, setShift] = useState(0);
   const [cursorPos, setCursorPos] = useState(false);
   const [cursorCords, setCursorCords] = useState([0, 0]);
-  const [sky, setSky] = useState(0);
-
-
-
-  const texts = [
-    [
-      <>
-
-      </>,
-    ],
-    [
-      <>
-        <div className={text.sectionContainer}>
-          <div className={[text.text, text.text3].join(" ")}>Web Designer & Developer</div>
-          <div className={[text.text, text.text3].join(" ")}>creating custom websites,</div>
-          <div className={[text.text, text.text3, text.dColor].join(" ")}>with beautiful designs,</div>
-          <div className={[text.text, text.text3].join(" ")}>and fast performance</div>
-          <div className={[text.text, text.text3].join(" ")}>for your needs.</div>
-        </div>
-      </>,
-    ],
-    [
-      <>
-        <div className={text.sectionContainer}>
-          <div className={[text.text, text.text3].join(" ")}>ABCD EFGH ijkl</div>
-        </div>
-      </>,
-    ],
-    [
-      <>
-      <div className={text.sectionContainer}>
-        <div className={[text.text, text.text3].join(" ")}>ABCD EFGH ijkl</div>
-      </div>
-    </>,
-    ],
-    [
-      <>
-      <div className={text.sectionContainer}>
-        <div className={[text.text, text.text3].join(" ")}>ABCD EFGH ijkl</div>
-      </div>
-    </>,
-    ],
-    [
-      <>
-      <div className={text.sectionContainer}>
-        <div className={[text.text, text.text3].join(" ")}>ABCD EFGH ijkl</div>
-      </div>
-    </>,
-    ],
-  ];
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -91,60 +39,24 @@ function App() {
     };
   }, []);
 
-  const cursorStyle = { 
-    left: cursorCords[1] - 5, 
-    top: cursorCords[0] - 100, 
-    transitionTimingFunction: "ease-out", 
-    transition: "0.75s", 
-    transitionDelay: ".0s", 
-    rotate: cursorPos ? "0deg" : "180deg"}
-
-
-
   return (
-    <div className={app.app}>
-      <div className={[logo.logo, text.text18].join(" ")}>
-        <div>Michał</div>
-        <div>Górnicki</div>
-      </div>
-
-      <div 
-      className={cursor.cursor} 
-      style={cursorStyle} 
-      alt="" />
-
-
-      <div className={dotBar.dotBar}>
-        <div className={dotBar.dotLine}></div>
-        {texts.map((item, index) => (
-          <div className={[dotBar.dot, shift === index ? dotBar.dotSelected : dotBar.dot].join(" ")}></div>
-        ))}
-      </div>
-
-      <div className={[skyButton.skyButton, sky === 0 ? skyButton.cloudyIcon : skyButton.clearIcon].join(" ")} onClick={() => (sky === 0 ? setSky(1) : setSky(0))}></div>
-          
-      <img src={mountainBackground} 
-      className={[background.background, 
-        sky === 0 ? background.lightingClear : 
-        background.lightingCloudy
-      ].join(" ")} 
-      alt="" 
-      onClick={() => (cursorPos ? (shift < texts.length - 1 ? setShift((state) => state + 1) : "") : shift > 0 ? setShift((state) => state - 1) : "")}
-      />
-      <img className={[background.backgroundClouds, sky === 0 ? background.clear : background.cloudy].join(" ")} alt=""
-      onClick={() => (cursorPos ? (shift < texts.length - 1 ? setShift((state) => state + 1) : "") : shift > 0 ? setShift((state) => state - 1) : "")}
-      />
-
-      {texts.map((item, index) => (
-        <div 
-        className={[text.container, 
-          index < shift ? text.shifted0 : 
-          index === shift ? text.shifted1 : 
-          index > shift ? text.shifted2 : ""
-        ].join(" ")}
-        onClick={() => (cursorPos ? (shift < texts.length - 1 ? setShift((state) => state + 1) : "") : shift > 0 ? setShift((state) => state - 1) : "")}
-        >{item}</div>
-      ))}
+    <div
+      className={app.app}
+      onClick={() =>
+        cursorPos
+          ? shift < texts.length - 1
+            ? setShift((state) => state + 1)
+            : ""
+          : shift > 0
+          ? setShift((state) => state - 1)
+          : ""
+      }
+    >
+      <Logo />
+      <CursorComponent cursorCords={cursorCords} cursorPos={cursorPos} />
+      <DotBar shift={shift} />
+      <Video />
+      <TextContainer shift={shift} />
     </div>
   );
 }
