@@ -6,7 +6,7 @@ import logo from "./css/logo.module.css";
 import background from "./css/background.module.css";
 import skyButton from "./css/skyButton.module.css";
 import dotBar from "./css/dotBar.module.css";
-import mountainBackground from "./assets/images/mountainbackground.webp";
+import mountainBackground from "./assets/images/mountainbackground.png";
 import arrow from "./assets/images/arrow.png";
 
 function App() {

@@ -7,7 +7,7 @@ import background from "./css/background.module.css";
 import skyButton from "./css/skyButton.module.css";
 import dotBar from "./css/dotBar.module.css";
 import mountainBackground from "./assets/images/mountainbackground.webp";
-import arrow from "./assets/images/arrow.png";
+import arrow from "./assets/images/arrow.webp";
 
 function App() {
   const [shift, setShift] = useState(0);
