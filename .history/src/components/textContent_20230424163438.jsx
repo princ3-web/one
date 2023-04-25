@@ -42,4 +42,4 @@ const textContent = [
   ],
 ];
 
-export default texts;
+export default textContent;
