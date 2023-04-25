@@ -1,0 +1,28 @@
+.cursor {
+  z-index: 3;
+  background-color: var(--light);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light))
+    drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light))
+    drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light));
+  animation: 1s float infinite alternate-reverse;
+
+}
+
+.cursorContainer{
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  margin-left: -10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+@keyframes float {
+  0% {transform: translateY(-10px);}
+  100% {transform: translateY(10px);}
+}

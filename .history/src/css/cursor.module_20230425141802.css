@@ -1,0 +1,26 @@
+.cursor {
+  position: absolute;
+  margin-top: 70px;
+  z-index: 3;
+  background-color: var(--light);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light))
+    drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light))
+    drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light));
+  animation: 1s float infinite;
+
+}
+
+.cursorContainer{
+  position: absolute;
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes float {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(200px);}
+}
