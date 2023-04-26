@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/one/static/css/main.2ce73a4c.css",
-    "main.js": "/one/static/js/main.45bf7fbd.js",
+    "main.css": "/one/static/css/main.46bd24c4.css",
+    "main.js": "/one/static/js/main.c4cbd9f8.js",
     "static/js/787.11608f33.chunk.js": "/one/static/js/787.11608f33.chunk.js",
     "static/media/video.mp4": "/one/static/media/video.d01847a14ce1f8e82896.mp4",
     "static/media/clouds0.webp": "/one/static/media/clouds0.0cf4014a1f513f5ce7e6.webp",
@@ -10,15 +10,17 @@
     "static/media/logo.png": "/one/static/media/logo.010185620efffa341bcd.png",
     "static/media/badge.png": "/one/static/media/badge.e2d797924b0df145f555.png",
     "static/media/success.png": "/one/static/media/success.c4a78e3a9e89001eab57.png",
+    "static/media/mouseDown.png": "/one/static/media/mouseDown.7f4f5338b7815a4c3657.png",
+    "static/media/mouseUp.png": "/one/static/media/mouseUp.e0fce3fedd9fb62b36f5.png",
     "static/media/achieve1.png": "/one/static/media/achieve1.09f6cc71a9b2761cce32.png",
     "static/media/achieve0.png": "/one/static/media/achieve0.1e72b3ab67f19f03c435.png",
     "index.html": "/one/index.html",
-    "main.2ce73a4c.css.map": "/one/static/css/main.2ce73a4c.css.map",
-    "main.45bf7fbd.js.map": "/one/static/js/main.45bf7fbd.js.map",
+    "main.46bd24c4.css.map": "/one/static/css/main.46bd24c4.css.map",
+    "main.c4cbd9f8.js.map": "/one/static/js/main.c4cbd9f8.js.map",
     "787.11608f33.chunk.js.map": "/one/static/js/787.11608f33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ce73a4c.css",
-    "static/js/main.45bf7fbd.js"
+    "static/css/main.46bd24c4.css",
+    "static/js/main.c4cbd9f8.js"
   ]
 }
