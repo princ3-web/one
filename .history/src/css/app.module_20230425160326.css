@@ -1,0 +1,59 @@
+:root {
+  --light: rgb(255, 255, 255);
+  --dark: rgb(0, 0, 0);
+  --transp: rgba(0, 0, 0, 0);
+  --transp-50: rgba(0, 0, 0, 0.5);
+  --transp-25: rgba(0, 0, 0, 0.25);
+  --transp-15: rgba(0, 0, 0, 0.15);
+  --gold-700: rgb(249, 239, 192);
+  --yellow-300: rgb(208, 179, 15);
+  --green-300: rgb(15, 208, 179);
+  --pink-300: rgb(179, 15, 208);
+  --red-300: rgb(204, 0, 0);
+  --thin: 200;
+  --regular: 400;
+  --bold: 600;
+  --size-1: 1rem;
+  --size-15: 1.5rem;
+  --size-2: 2rem;
+  --size-25: 2.5rem;
+  --size-3: 3rem;
+  --size-4: 4rem;
+  --size-5: 5rem;
+  --size-6: 6rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+html > div {
+  display: none;
+}
+
+body {
+  background-color: var(--dark);
+  user-select: none;
+  cursor: auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
