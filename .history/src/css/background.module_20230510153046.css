@@ -1,0 +1,29 @@
+.background {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: brightness(1) saturate(0);
+  
+}
+
+
+
+@keyframes clouds {
+  0% {transform: translateX(0);}
+  48% {transform: translateX(-10%);}
+  52% {transform: translateX(-10%);}
+  100% {transform: translateX(0%);}
+}
+
+.video {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  padding: 0;
+  filter: saturate(0) contrast(1) brightness(0.9);
+}

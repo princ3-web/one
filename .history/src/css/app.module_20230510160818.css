@@ -1,0 +1,59 @@
+:root {
+  --light: rgb(240, 240, 240);
+  --dark: rgb(20, 20, 20);
+  --transp: rgba(0, 0, 0, 0);
+  --transp-50: rgba(0, 0, 0, 0.5);
+  --transp-25: rgba(0, 0, 0, 0.25);
+  --transp-15: rgba(0, 0, 0, 0.15);
+  --gray-200: rgb(220, 220, 220);
+  --gray-300: rgb(200, 200, 200);
+  --gray-400: rgb(180, 180, 180);
+  --gold-700: rgb(249, 239, 192);
+
+  --thin: 200;
+  --regular: 400;
+  --bold: 600;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-30: 30px;
+  --font-36: 36px;
+  --font-42: 42px;
+  --font-48: 48px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Tinos', serif;
+}
+
+html > div {
+  display: none;
+}
+
+body {
+  background-color: var(--dark);
+  user-select: none;
+  cursor: auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+

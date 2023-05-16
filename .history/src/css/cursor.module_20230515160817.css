@@ -1,0 +1,32 @@
+.cursor {
+  z-index: 3;
+  background-color: var(--light);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light))
+    drop-shadow(0px 0px 20px var(--light)) drop-shadow(0px 0px 20px var(--light));
+  margin-top: 0.5rem;
+}
+
+.cursorContainer {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  margin-left: -8.5rem;
+  margin-top: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: 2s rotate infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
