@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/one/static/css/main.18156132.css",
-    "main.js": "/one/static/js/main.0a845217.js",
-    "static/js/787.11608f33.chunk.js": "/one/static/js/787.11608f33.chunk.js",
-    "static/media/background1.webp": "/one/static/media/background1.7d523672187dc56e1dee.webp",
-    "static/media/goal.png": "/one/static/media/goal.f993702e0c57e5aeec74.png",
-    "static/media/badge.png": "/one/static/media/badge.e2d797924b0df145f555.png",
-    "static/media/success.png": "/one/static/media/success.c4a78e3a9e89001eab57.png",
-    "static/media/achieve1.png": "/one/static/media/achieve1.09f6cc71a9b2761cce32.png",
-    "static/media/techs.png": "/one/static/media/techs.241438f3229549dc1a5a.png",
-    "index.html": "/one/index.html",
-    "main.18156132.css.map": "/one/static/css/main.18156132.css.map",
-    "main.0a845217.js.map": "/one/static/js/main.0a845217.js.map",
-    "787.11608f33.chunk.js.map": "/one/static/js/787.11608f33.chunk.js.map"
+    "main.css": "./static/css/main.6b6b3223.css",
+    "main.js": "./static/js/main.5e31128b.js",
+    "static/js/787.11608f33.chunk.js": "./static/js/787.11608f33.chunk.js",
+    "static/media/background3.webp": "./static/media/background3.4382b96a6ae6264e71d8.webp",
+    "static/media/website4.png": "./static/media/website4.2051d3ff6290c0de996b.png",
+    "static/media/arrowDown.png": "./static/media/arrowDown.de3966f4676215e69ff6.png",
+    "static/media/arrowUp.png": "./static/media/arrowUp.511b712e83c9aa1ffb6b.png",
+    "static/media/goal.png": "./static/media/goal.f993702e0c57e5aeec74.png",
+    "static/media/email3.png": "./static/media/email3.ad2eb2f9872897c7b742.png",
+    "static/media/badge.png": "./static/media/badge.e2d797924b0df145f555.png",
+    "static/media/success.png": "./static/media/success.c4a78e3a9e89001eab57.png",
+    "static/media/email1.png": "./static/media/email1.986218165c190e2190dd.png",
+    "static/media/email0.png": "./static/media/email0.e80f81d109051780d5be.png",
+    "static/media/email2.png": "./static/media/email2.0511f0b9c30a3f959a4d.png",
+    "static/media/website0.png": "./static/media/website0.45ab5a09e244cca35016.png",
+    "static/media/achieve1.png": "./static/media/achieve1.09f6cc71a9b2761cce32.png",
+    "static/media/techs.png": "./static/media/techs.241438f3229549dc1a5a.png",
+    "index.html": "./index.html",
+    "main.6b6b3223.css.map": "./static/css/main.6b6b3223.css.map",
+    "main.5e31128b.js.map": "./static/js/main.5e31128b.js.map",
+    "787.11608f33.chunk.js.map": "./static/js/787.11608f33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18156132.css",
-    "static/js/main.0a845217.js"
+    "static/css/main.6b6b3223.css",
+    "static/js/main.5e31128b.js"
   ]
 }
