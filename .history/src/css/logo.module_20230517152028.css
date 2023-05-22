@@ -1,0 +1,20 @@
+.logo{
+  z-index: 6;
+  position: absolute;
+  width: 3rem;
+  left: 2rem;
+  top: 2rem;
+  color: var(--light);
+  font-size: var(--font-14);
+  text-shadow: 2px 2px 5px var(--transp-50);
+  background-color: var(--transp);
+  border-radius: 0rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  filter: opacity(0.7`5);
+  transition: 0.2s;
+}
+
+.logo:hover{
+  filter: opacity(1);
+}
