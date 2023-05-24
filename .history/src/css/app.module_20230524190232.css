@@ -35,8 +35,6 @@
   margin: 0;
   font-family: 'Nanum Myeongjo', serif;
   font-family: 'DM Serif Display', serif;
-  font-family: 'Amaranth', sans-serif;
-
   color: var(--light);
   cursor: url("../assets/icons/cursor0.png"), auto;
 }

@@ -1,7 +1,7 @@
 .logo{
   z-index: 6;
   position: absolute;
-  width: 3rem;
+  width: 4rem;
   left: 2rem;
   top: 2rem;
   color: var(--light);
@@ -10,10 +10,10 @@
   border-radius: 0rem;
   text-align: center;
   letter-spacing: 0.1rem;
-  filter: opacity(0.5) drop-shadow(2px 2px 2px var(--gray-200));
+  filter: opacity(0.5) drop-shadow(1px 2px 1px var(--dark));
   transition: 0.2s;
 }
 
 .logo:hover{
-  filter: opacity(1) drop-shadow(1px 1px 1px var(--gray-200));
+  filter: opacity(1);
 }

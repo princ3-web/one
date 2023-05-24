@@ -2,7 +2,6 @@ import React from "react";
 import slides from "../css/slides.module.css";
 
 const MailTo = ({ email, subject, body, children }) => {
-  
   const handleMailtoClick = () => {
     const windowWidth = 800;
     const windowHeight = 600;
@@ -26,10 +25,10 @@ const MailTo = ({ email, subject, body, children }) => {
   return (
     <>
       {items.map((item) => (
-        <div className={slides.iconBig} onClick={handleMailtoClick}>
+        <a className={slides.iconBig} hre={handleMailtoClick}>
           <div className={slides.iconBigImage}  alt="" />
           <div className={slides.iconBigSubtitle}>{item.subtitle}</div>
-        </div>
+        </a>
       ))}
     </>
   );

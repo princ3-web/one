@@ -123,7 +123,7 @@
 }
 
 .iconBigImage:hover {
-  filter: brightness(1) drop-shadow(2px 2px 2px var(--gray-200));
+  filter: brightness(1) ;
   background: url("../assets/icons/email3.png");
   background-size: 100%;
   transition: 0.5s;

@@ -56,13 +56,11 @@ const SlidesContent = [
   ],
   [
     <div className={slides.sectionContainer}>
-      <div className={slides.iconContainer}>
         <MailTo
           email={"gornmich@gmail.com"}
           subject={"zapytanie ws. projektu"}
           body={"dzień dobry,"}
         />
-      </div>
     </div>
   ],
 ];

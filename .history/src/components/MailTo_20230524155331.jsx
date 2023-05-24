@@ -2,7 +2,6 @@ import React from "react";
 import slides from "../css/slides.module.css";
 
 const MailTo = ({ email, subject, body, children }) => {
-  
   const handleMailtoClick = () => {
     const windowWidth = 800;
     const windowHeight = 600;

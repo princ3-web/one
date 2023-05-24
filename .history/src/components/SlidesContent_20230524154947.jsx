@@ -63,7 +63,7 @@ const SlidesContent = [
           body={"dzień dobry,"}
         />
       </div>
-    </div>
+    </div>,
   ],
 ];
 

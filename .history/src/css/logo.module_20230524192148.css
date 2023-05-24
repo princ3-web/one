@@ -1,7 +1,7 @@
 .logo{
   z-index: 6;
   position: absolute;
-  width: 3rem;
+  width: 4rem;
   left: 2rem;
   top: 2rem;
   color: var(--light);
