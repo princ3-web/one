@@ -1,0 +1,174 @@
+.container {
+  z-index: 2;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  transition: 0.75s;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainText {
+  font-size: var(--font-42);
+  filter: drop-shadow(0px 2px 2px var(--gray-300));
+  padding: 0.25rem;
+  width: fit-content;
+  transition: 0s;
+}
+
+.smallItem {
+  display: flex;
+  align-items: center;
+}
+
+.smallText {
+  font-size: var(--font-20);
+  padding: 0.25rem;
+  width: 90%;
+}
+
+.smallTextIcon {
+  width: 3.5rem;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.shifted0 {
+  transition-delay: 0s;
+  filter: opacity(0);
+  visibility: hidden;
+}
+.shifted1 {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  filter: opacity(1);
+  visibility: visible;
+}
+.shifted2 {
+  transition-delay: 0s;
+  filter: opacity(0);
+  visibility: hidden;
+}
+
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  margin-block: 2rem;
+  text-decoration: none;
+  filter: drop-shadow(5px 5px 2px var(--gray-200));
+}
+
+.iconImage {
+  width: 5rem;
+  height: 5rem;
+  filter: brightness(0.7) saturate(0);
+  transition: 0.3s;
+}
+
+.icon:hover .iconImage {
+  filter: brightness(1) saturate(1);
+}
+
+.iconWebsite {
+  width: 9rem;
+  height: 9rem;
+  background: url("../assets/icons/website0.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1) saturate(0.75) opacity(1);
+  cursor: url("../assets/icons/cursor1.png"), auto;
+  transition: 0.5s;
+}
+
+.icon:hover .iconWebsite {
+  background: url("../assets/icons/website1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1) saturate(0.75) opacity(1);
+}
+
+.iconSubtitle {
+  font-size: var(--font-20);
+  text-align: center;
+  width: 75%;
+  margin-top: 0.5rem;
+}
+
+.iconBig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block: 2rem;
+}
+
+.iconBigImage {
+  width: 9rem;
+  height: 9rem;
+  filter: brightness(0.9) drop-shadow(2px 2px 2px var(--gray-200));
+  transition: 0.2s;
+  background: url("../assets/icons/email1.png");
+  background-size: 100%;
+  transition: 0.5s;
+  cursor: url("../assets/icons/cursor1.png"), auto;
+}
+
+.iconBigImage:hover {
+  filter: brightness(1) drop-shadow(5px 5px 2px var(--gray-200));
+  background: url("../assets/icons/email3.png");
+  background-size: 100%;
+}
+
+.iconBigSubtitle {
+  font-size: var(--font-30);
+  text-align: center;
+  width: 75%;
+  margin-top: 1rem;
+}
+
+.arrowContainer {
+  position: absolute;
+  display: flex;
+  bottom: 8%;
+  z-index: 2;
+  filter: opacity(1);
+  width: 7%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 3rem;
+  cursor: url("../assets/icons/cursor1.png"), auto;
+  transition: 0.1s;
+  filter: saturate(1) brightness(1) opacity(0.5);
+}
+
+.arrow:active {
+  transform: translateY(10%);
+}
+
+.arrow:hover {
+  filter: saturate(1) brightness(1);
+}
