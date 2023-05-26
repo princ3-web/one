@@ -8,7 +8,7 @@ import exp2 from "../assets/icons/exp2.png";
 import exp3 from "../assets/icons/exp3.png";
 
 const text0 = [
-  "Hello! My name is Michael.",
+  "Hello! My name is Michael",
   "I am a Web Designer & Developer",
   "who crafts custom websites,",
   "with beautiful designs",

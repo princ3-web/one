@@ -8,7 +8,7 @@ import exp2 from "../assets/icons/exp2.png";
 import exp3 from "../assets/icons/exp3.png";
 
 const text0 = [
-  "Hello! My name is Michael.",
+  "Hello! My name is Michael",
   "I am a Web Designer & Developer",
   "who crafts custom websites,",
   "with beautiful designs",
@@ -70,7 +70,7 @@ const SlidesContent = [
           (n === 0 ? (
             <div className={[slides.mainText]}>{item}</div>
           ) : (
-            <div className={[slides.mainText]} style={{fontSize: "30px"}}>{item}</div>
+            <div className={[slides.mainText]} style={{fontSize: "27px"}}>{item}</div>
           ))
       )}
     </div>,

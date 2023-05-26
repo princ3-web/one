@@ -73,7 +73,7 @@
   width: 33%;
   margin-block: 2rem;
   text-decoration: none;
-  filter: drop-shadow(5px 5px 15px var(--gray-200));
+  filter: drop-shadow(5px 5px 5px var(--gray-200));
 }
 
 .iconImage {
@@ -135,7 +135,7 @@
 }
 
 .iconBigImage:hover {
-  filter: brightness(1) drop-shadow(5px 5px 15px var(--gray-200));
+  filter: brightness(1) drop-shadow(5px 5px 1px var(--gray-200));
   background: url("../assets/icons/email3.png");
   background-size: 100%;
 }

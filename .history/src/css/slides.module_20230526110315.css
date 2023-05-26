@@ -73,7 +73,7 @@
   width: 33%;
   margin-block: 2rem;
   text-decoration: none;
-  filter: drop-shadow(5px 5px 15px var(--gray-200));
+  filter: drop-shadow(5px 5px 5px var(--gray-200));
 }
 
 .iconImage {

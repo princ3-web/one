@@ -7,8 +7,8 @@ import exp1 from "../assets/icons/exp1.png";
 import exp2 from "../assets/icons/exp2.png";
 import exp3 from "../assets/icons/exp3.png";
 
+
 const text0 = [
-  "Hello! My name is Michael.",
   "I am a Web Designer & Developer",
   "who crafts custom websites,",
   "with beautiful designs",
@@ -65,21 +65,16 @@ const experiences = [
 const SlidesContent = [
   [
     <div className={slides.sectionContainer}>
-      {text0.map(
-        (item, n) =>
-          (n === 0 ? (
-            <div className={[slides.mainText]}>{item}</div>
-          ) : (
-            <div className={[slides.mainText]} style={{fontSize: "30px"}}>{item}</div>
-          ))
-      )}
+      {text0.map((item, n) => ( n 
+        <div className={[slides.mainText]}>{item}</div>
+      ))}
     </div>,
   ],
   [
     <div className={slides.sectionContainer} style={{ width: "80%", left: "10%" }}>
       {text1.map((item) => (
         <div className={slides.smallItem}>
-          <img className={[slides.smallTextIcon]} src={icon1} alt="" />
+            <img className={[slides.smallTextIcon]} src={icon1} alt="" />
           <div className={[slides.smallText]}>{item.text}</div>
         </div>
       ))}
@@ -88,7 +83,7 @@ const SlidesContent = [
   [
     <div className={slides.sectionContainer} style={{ width: "80%", left: "10%" }}>
       {experiences.map((item) => (
-        <div className={slides.smallItem} style={{ marginBlock: "0.5rem" }}>
+        <div className={slides.smallItem} style={{marginBlock: "0.5rem"}}>
           <img className={[slides.smallTextIcon]} src={item.icon} alt="" />
           <div className={[slides.smallText]}>{item.text}</div>
         </div>
