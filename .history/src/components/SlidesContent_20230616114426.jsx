@@ -69,7 +69,7 @@ const SlidesContent = [
         n === 0 ? (
           <div className={[slides.mainText]}>{item}</div>
         ) : (
-          <div className={[slides.mainText]} style={{ fontSize: "30px" }}>
+          <div className={[slides.mainText]} style={{ fontSize: "24px" }}>
             {item}
           </div>
         )

@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/images/background7.webp";
+import image from "../assets/images/background7.jpg";
 import background from "../css/background.module.css";
 
 const Background = (props) => {

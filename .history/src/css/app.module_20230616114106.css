@@ -28,16 +28,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 * {
   overflow: hidden;
   padding: 0;
   margin: 0;
   font-family: 'DM Serif Display', serif;
-  font-family: 'Nanum Myeongjo', serif;
   font-family: 'Amaranth', sans-serif;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
+
+
   color: var(--light);
   cursor: url("../assets/icons/cursor0.png"), auto;
 }

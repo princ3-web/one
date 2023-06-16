@@ -89,7 +89,7 @@ const SlidesContent = [
   [
     <div className={slides.sectionContainer} style={{ width: "80%", left: "10%" }}>
       {experiences.map((item) => (
-        <div className={slides.smallItem}>
+        <div className={slides.smallItem} style={{ marginBlock: "0.5rem" }}>
           <img className={[slides.smallTextIcon]} src={item.icon} alt="" />
           <div className={[slides.smallText]}>{item.text}</div>
         </div>
