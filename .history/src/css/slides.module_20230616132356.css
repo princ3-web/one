@@ -5,7 +5,7 @@
   height: 70%;
   transition: 0.75s;
   border: 2px solid var(--light);
-  border-radius: 8px;
+  border-radius: 12px;
   background: linear-gradient(135deg, var(--dark) -50%, var(--transp));
   backdrop-filter: blur(10px);
 }

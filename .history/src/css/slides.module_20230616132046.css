@@ -5,9 +5,9 @@
   height: 70%;
   transition: 0.75s;
   border: 2px solid var(--light);
-  border-radius: 8px;
+  border-radius: 2px;
   background: linear-gradient(135deg, var(--dark) -50%, var(--transp));
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px) saturat;
 }
 
 .sectionContainer {
@@ -22,6 +22,7 @@
 
 .mainText {
   font-size: var(--font-48);
+  filter: drop-shadow(0px 2px 2px var(--gray-300));
   padding: 0.25rem;
   width: fit-content;
   transition: 0s;
